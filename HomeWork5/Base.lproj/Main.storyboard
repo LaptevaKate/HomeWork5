@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,147 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budweiser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOF-cI-reM">
+                                <rect key="frame" x="50" y="76.5" width="314" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heineken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQt-rS-kXb">
+                                <rect key="frame" x="50" y="258" width="314" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corona" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPT-v6-7hb">
+                                <rect key="frame" x="50" y="439.5" width="314" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuW-UW-izC">
+                                <rect key="frame" x="178" y="339.5" width="58.5" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VRA-5k-1LI"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="buy 1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="heinekenSale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KxZ-7V-3cJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWk-Oo-V74">
+                                <rect key="frame" x="178" y="521" width="58.5" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oYg-Wf-gLZ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="buy 1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="coronaSale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uec-et-49M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQl-2N-bYp">
+                                <rect key="frame" x="178" y="158" width="58.5" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Tic-GE-3N6"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="buy 1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="budweiserSale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T5T-Q8-4m8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fo-hz-kJ0">
+                                <rect key="frame" x="137" y="762" width="140" height="50"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="XjG-JB-umL"/>
+                                    <constraint firstAttribute="height" constant="50" id="leV-j1-chp"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New Day">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startNewDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jez-cY-Wct"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dd-VM-HI6">
+                                <rect key="frame" x="167" y="591" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="5bt-27-owS"/>
+                                    <constraint firstAttribute="height" constant="80" id="gy8-7m-enl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.44417395567326556" green="0.67440562860719178" blue="0.96611279249191284" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nQt-rS-kXb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="7Ff-rz-9Lx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Fo-hz-kJ0" secondAttribute="bottom" constant="50" id="A9t-pi-reY"/>
+                            <constraint firstItem="QWk-Oo-V74" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AfY-2F-Aby"/>
+                            <constraint firstItem="nQt-rS-kXb" firstAttribute="top" secondItem="vOF-cI-reM" secondAttribute="bottom" constant="160" id="CGn-Eg-HBJ"/>
+                            <constraint firstItem="2Dd-VM-HI6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cem-yX-un2"/>
+                            <constraint firstItem="CPT-v6-7hb" firstAttribute="top" secondItem="nQt-rS-kXb" secondAttribute="bottom" constant="160" id="Jl4-7k-4YT"/>
+                            <constraint firstItem="nQt-rS-kXb" firstAttribute="top" secondItem="JQl-2N-bYp" secondAttribute="bottom" constant="60" id="MaP-fN-1b0"/>
+                            <constraint firstItem="YuW-UW-izC" firstAttribute="top" secondItem="nQt-rS-kXb" secondAttribute="bottom" constant="60" id="OZl-yP-8VW"/>
+                            <constraint firstItem="nQt-rS-kXb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PEz-jx-Gia"/>
+                            <constraint firstItem="JQl-2N-bYp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tyz-gl-ccU"/>
+                            <constraint firstItem="CPT-v6-7hb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xpb-9F-ac8"/>
+                            <constraint firstItem="QWk-Oo-V74" firstAttribute="top" secondItem="CPT-v6-7hb" secondAttribute="bottom" constant="60" id="bl6-Hq-6hs"/>
+                            <constraint firstItem="nQt-rS-kXb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" id="dzP-em-ddD"/>
+                            <constraint firstItem="CPT-v6-7hb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="eor-vL-4Rg"/>
+                            <constraint firstItem="4Fo-hz-kJ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ljM-E7-kUE"/>
+                            <constraint firstItem="2Dd-VM-HI6" firstAttribute="top" secondItem="QWk-Oo-V74" secondAttribute="bottom" constant="30" id="r2L-Oe-e0R"/>
+                            <constraint firstItem="vOF-cI-reM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="tq1-ei-mMj"/>
+                            <constraint firstItem="YuW-UW-izC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yRD-G6-TJK"/>
+                            <constraint firstItem="vOF-cI-reM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrv-8v-83e"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="2Dd-VM-HI6" id="hpv-QR-ML9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
         </scene>
     </scenes>
 </document>

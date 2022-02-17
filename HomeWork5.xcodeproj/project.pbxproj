@@ -13,6 +13,8 @@
 		5EC468E827BED4130047277A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC468E627BED4130047277A /* Main.storyboard */; };
 		5EC468EA27BED4140047277A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC468E927BED4140047277A /* Assets.xcassets */; };
 		5EC468ED27BED4140047277A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC468EB27BED4140047277A /* LaunchScreen.storyboard */; };
+		5EC4697527BED9FC0047277A /* Beers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4697427BED9FC0047277A /* Beers.swift */; };
+		5EC4697727BEDAEA0047277A /* BeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4697627BEDAEA0047277A /* BeerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5EC468E927BED4140047277A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EC468EC27BED4140047277A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EC468EE27BED4140047277A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EC4697427BED9FC0047277A /* Beers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beers.swift; sourceTree = "<group>"; };
+		5EC4697627BEDAEA0047277A /* BeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				5EC468E227BED4130047277A /* SceneDelegate.swift */,
 				5EC468E427BED4130047277A /* ViewController.swift */,
 				5EC468E627BED4130047277A /* Main.storyboard */,
+				5EC4697427BED9FC0047277A /* Beers.swift */,
+				5EC4697627BEDAEA0047277A /* BeerManager.swift */,
 				5EC468E927BED4140047277A /* Assets.xcassets */,
 				5EC468EB27BED4140047277A /* LaunchScreen.storyboard */,
 				5EC468EE27BED4140047277A /* Info.plist */,
@@ -141,6 +147,8 @@
 				5EC468E527BED4130047277A /* ViewController.swift in Sources */,
 				5EC468E127BED4130047277A /* AppDelegate.swift in Sources */,
 				5EC468E327BED4130047277A /* SceneDelegate.swift in Sources */,
+				5EC4697727BEDAEA0047277A /* BeerManager.swift in Sources */,
+				5EC4697527BED9FC0047277A /* Beers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
