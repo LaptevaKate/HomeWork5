@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class BeerManager {
+class BeerManager {
     
     static public var manager = BeerManager()
     var money: Int
@@ -19,14 +19,14 @@ final class BeerManager {
         self.money = 0
     }
     
-    func buyBeer(mark: String) {
+    func buyBeer(mark: String, controller: UIViewController) {
         guard let buyingBeer = beers.filter({$0.mark == mark}).first else { return }
         if buyingBeer.theRestOfBeer > 0 {
             let price = buyingBeer.price
             money += price
             buyingBeer.theRestOfBeer -= 1
         } else {
-            print("OUT OF STOCK")
+           print("OUT OF STOCK")
         }
     }
     

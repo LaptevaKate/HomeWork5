@@ -19,20 +19,19 @@ final class ViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction private func budweiserSale(_ sender: Any) {
-        beerManager.buyBeer(mark: "Budweiser")
+        beerManager.buyBeer(mark: "Budweiser", controller: self)
         changeCounterLabel(beerManager.countMoney())
     }
     
     @IBAction private func heinekenSale(_ sender: Any) {
-        beerManager.buyBeer(mark: "Heineken")
+        beerManager.buyBeer(mark: "Heineken", controller: self)
         changeCounterLabel(beerManager.countMoney())
     }
     
     @IBAction private func coronaSale(_ sender: Any) {
-        beerManager.buyBeer(mark: "Corona")
+        beerManager.buyBeer(mark: "Corona", controller: self)
         changeCounterLabel(beerManager.countMoney())
     }
-    
     
     @IBAction private func startNewDay(_ sender: Any) {
         beerManager.startNewDay()
