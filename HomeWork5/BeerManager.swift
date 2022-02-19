@@ -19,7 +19,7 @@ class BeerManager {
         self.money = 0
     }
     
-    func buyBeer(mark: String, controller: UIViewController) {
+    func buyBeer(mark: String) {
         guard let buyingBeer = beers.filter({$0.mark == mark}).first else { return }
         if buyingBeer.theRestOfBeer > 0 {
             let price = buyingBeer.price
