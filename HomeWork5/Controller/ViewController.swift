@@ -48,7 +48,7 @@ final class ViewController: UIViewController {
     
     //MARK: - Methods
     private func changeCounterLabel(_ number: Int) {
-        counterLabel.text = "My\nprofit\n\(number)$"
+        counterLabel.text = "My profit \(number)$"
     }
 }
 
