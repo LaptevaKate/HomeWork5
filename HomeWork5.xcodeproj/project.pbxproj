@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F08E6D6F3AF8DE26AF7FA8 /* Pods_HomeWork5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BF5E0C54FBCB0DD836826 /* Pods_HomeWork5.framework */; };
 		5EC468E127BED4130047277A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC468E027BED4130047277A /* AppDelegate.swift */; };
 		5EC468E327BED4130047277A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC468E227BED4130047277A /* SceneDelegate.swift */; };
 		5EC468E527BED4130047277A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC468E427BED4130047277A /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46455B4BB0FEA2880E916266 /* Pods-HomeWork5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork5.debug.xcconfig"; path = "Target Support Files/Pods-HomeWork5/Pods-HomeWork5.debug.xcconfig"; sourceTree = "<group>"; };
 		5EC468DD27BED4130047277A /* HomeWork5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC468E027BED4130047277A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EC468E227BED4130047277A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		5EC468EE27BED4140047277A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC4697427BED9FC0047277A /* Beers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beers.swift; sourceTree = "<group>"; };
 		5EC4697627BEDAEA0047277A /* BeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerManager.swift; sourceTree = "<group>"; };
+		808BF5E0C54FBCB0DD836826 /* Pods_HomeWork5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWork5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB77AEEDD69D9C6A21FC1CF /* Pods-HomeWork5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork5.release.xcconfig"; path = "Target Support Files/Pods-HomeWork5/Pods-HomeWork5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F08E6D6F3AF8DE26AF7FA8 /* Pods_HomeWork5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E97322A2840F6DF00BDE2BA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5EC468E627BED4130047277A /* Main.storyboard */,
+				5EC468EB27BED4140047277A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5E97322B2840F6F600BDE2BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5EC468E427BED4130047277A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E97322C2840F71C00BDE2BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4697627BEDAEA0047277A /* BeerManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5E97322D2840F75A00BDE2BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4697427BED9FC0047277A /* Beers.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5EC468D427BED4130047277A = {
 			isa = PBXGroup;
 			children = (
 				5EC468DF27BED4130047277A /* HomeWork5 */,
 				5EC468DE27BED4130047277A /* Products */,
+				D26F358E1DAEEFF11FF5C30C /* Pods */,
+				8ACE178F635EFBB62FD8EA42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,15 +102,32 @@
 			children = (
 				5EC468E027BED4130047277A /* AppDelegate.swift */,
 				5EC468E227BED4130047277A /* SceneDelegate.swift */,
-				5EC468E427BED4130047277A /* ViewController.swift */,
-				5EC468E627BED4130047277A /* Main.storyboard */,
-				5EC4697427BED9FC0047277A /* Beers.swift */,
-				5EC4697627BEDAEA0047277A /* BeerManager.swift */,
+				5E97322D2840F75A00BDE2BA /* Model */,
+				5E97322B2840F6F600BDE2BA /* Controller */,
+				5E97322C2840F71C00BDE2BA /* Services */,
+				5E97322A2840F6DF00BDE2BA /* Storyboards */,
 				5EC468E927BED4140047277A /* Assets.xcassets */,
-				5EC468EB27BED4140047277A /* LaunchScreen.storyboard */,
 				5EC468EE27BED4140047277A /* Info.plist */,
 			);
 			path = HomeWork5;
+			sourceTree = "<group>";
+		};
+		8ACE178F635EFBB62FD8EA42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				808BF5E0C54FBCB0DD836826 /* Pods_HomeWork5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D26F358E1DAEEFF11FF5C30C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46455B4BB0FEA2880E916266 /* Pods-HomeWork5.debug.xcconfig */,
+				EAB77AEEDD69D9C6A21FC1CF /* Pods-HomeWork5.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EC468F127BED4140047277A /* Build configuration list for PBXNativeTarget "HomeWork5" */;
 			buildPhases = (
+				20E99A8391851DF8E18031B8 /* [CP] Check Pods Manifest.lock */,
 				5EC468D927BED4130047277A /* Sources */,
 				5EC468DA27BED4130047277A /* Frameworks */,
 				5EC468DB27BED4130047277A /* Resources */,
+				874AD7B7B3371825847181F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +197,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20E99A8391851DF8E18031B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeWork5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		874AD7B7B3371825847181F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWork5/Pods-HomeWork5-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWork5/Pods-HomeWork5-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeWork5/Pods-HomeWork5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5EC468D927BED4130047277A /* Sources */ = {
@@ -292,6 +393,7 @@
 		};
 		5EC468F227BED4140047277A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46455B4BB0FEA2880E916266 /* Pods-HomeWork5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,6 +422,7 @@
 		};
 		5EC468F327BED4140047277A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB77AEEDD69D9C6A21FC1CF /* Pods-HomeWork5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
