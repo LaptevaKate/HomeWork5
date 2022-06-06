@@ -41,14 +41,18 @@ final class ViewController: UIViewController {
     //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        counterLabel.layer.cornerRadius = 10
-        counterLabel.layer.masksToBounds = true
-        changeCounterLabel(beerManager.money)
+        initCounterLabel()
+        changeCounterLabel(beerManager.bank.money)
     }
     
     //MARK: - Methods
     private func changeCounterLabel(_ number: Int) {
         counterLabel.text = "My profit \(number)$"
+    }
+    
+    private func initCounterLabel() {
+        counterLabel.layer.cornerRadius = 10
+        counterLabel.layer.masksToBounds = true
     }
 }
 

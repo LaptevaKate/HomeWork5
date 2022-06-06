@@ -7,45 +7,67 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
 class BeerManager {
     
-    static public var manager = BeerManager()
-    var money: Int
+    //MARK: - Properties
     
-    public var beers = [Beers(mark: "Budweiser",
+    let realm = try! Realm()
+    lazy var currentBeers: Results<Beer> = {self.realm.objects(Beer.self)}()
+    lazy var bank = {self.realm.objects(Bank.self)}().first!
+    
+    static public var manager = BeerManager()
+    
+    var beers = [Beer(mark: "Budweiser",
                               price: 8,
                               countryOfProduction: "USA",
                               theRestOfBeer: 56),
-                        Beers(mark: "Heineken",
+                        Beer(mark: "Heineken",
                               price: 5,
                               countryOfProduction: "Holland",
                               theRestOfBeer: 23),
-                        Beers(mark: "Corona",
+                        Beer(mark: "Corona",
                               price: 7,
                               countryOfProduction: "Mexico",
                               theRestOfBeer: 8) ]
     
     private init() {
-        self.money = 0
+        if self.currentBeers.isEmpty {
+            try! realm.write() {
+                let bank = Bank()
+                realm.add(bank)
+                realm.add(beers)
+                
+                for beer in beers {
+                    bank.beer.append(beer)
+                }
+            }
+        }
     }
     
+    //MARK: - Methods
+    
     func buyBeer(mark: String) {
-        guard let buyingBeer = beers.filter({$0.mark == mark}).first else { return }
+        guard let buyingBeer = currentBeers.filter({$0.mark == mark}).first else { return }
         if buyingBeer.theRestOfBeer > 0 {
             let price = buyingBeer.price
-            money += price
-            buyingBeer.theRestOfBeer -= 1
+            try! realm.write {
+                bank.money += price
+                buyingBeer.theRestOfBeer -= 1
+            }
         } else {
-           print("OUT OF STOCK")
+            print("OUT OF STOCK")
         }
     }
     
     func countMoney() -> Int {
-        money
+        return bank.money
     }
     
     func startNewDay() {
-        money = 0
+        try! realm.write {
+            bank.money = 0
+        }
     }
 }

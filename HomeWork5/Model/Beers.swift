@@ -6,18 +6,26 @@
 //
 
 import UIKit
+import RealmSwift
 
-class Beers {
-    let mark: String
-    let price: Int
-    let countryOfProduction: String
-    var theRestOfBeer: Int
+class Bank: Object {
+    @Persisted var money: Int = 0
+    let beer = List<Beer>()
+}
+
+class Beer: Object {
+    @Persisted var mark: String = ""
+    @Persisted var price: Int = 0
+    @Persisted var countryOfProduction: String = ""
+    @Persisted var theRestOfBeer: Int = 0
     
-    init(mark: String, price: Int, countryOfProduction: String, theRestOfBeer: Int) {
-    self.mark = mark
-    self.price = price
-    self.countryOfProduction = countryOfProduction
-    self.theRestOfBeer = theRestOfBeer
-        
+    let bank = LinkingObjects(fromType: Bank.self, property: "beer")
+    
+    convenience init(mark: String, price: Int, countryOfProduction: String, theRestOfBeer: Int) {
+        self.init()
+        self.mark = mark
+        self.price = price
+        self.countryOfProduction = countryOfProduction
+        self.theRestOfBeer = theRestOfBeer
     }
 }
