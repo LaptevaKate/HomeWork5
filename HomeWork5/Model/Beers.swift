@@ -10,7 +10,6 @@ import RealmSwift
 
 class Bank: Object {
     @Persisted var money: Int = 0
-    let beer = List<Beer>()
 }
 
 class Beer: Object {
@@ -18,8 +17,6 @@ class Beer: Object {
     @Persisted var price: Int = 0
     @Persisted var countryOfProduction: String = ""
     @Persisted var theRestOfBeer: Int = 0
-    
-    let bank = LinkingObjects(fromType: Bank.self, property: "beer")
     
     convenience init(mark: String, price: Int, countryOfProduction: String, theRestOfBeer: Int) {
         self.init()
